@@ -10,7 +10,7 @@ function enterReminder() {
         let listItem = document.createElement('li');
 
         // Sätt textinnehållet för <li>-elementet med påminnelsen, datum och tid
-        listItem.textContent = `${reminderText} - Datum: ${reminderDate}, Tid: ${reminderTime}`;
+        listItem.textContent = `${reminderText} - ${reminderDate}, ${reminderTime}`;
 
         // Lägg till <li>-elementet till <ul>-elementet
         let reminderList = document.getElementById('reminder-list');
@@ -18,9 +18,9 @@ function enterReminder() {
 
         // Töm input-fälten
         document.getElementById('write-reminder').value = '';
-        document.getElementById('date-reminder').value = '1900-01-01';
+        document.getElementById('date-reminder').value = '2024-05-25';
         document.getElementById('time-reminder').value = '00:00';
     } else {
-        alert("Skriv in en påminnelse innan du klickar på Enter");
+        alert("Don't forget to write a reminder");
     }
 }
